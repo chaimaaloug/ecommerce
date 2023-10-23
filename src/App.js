@@ -5,6 +5,7 @@ import Products from "./pages/Products/Products";
 import Card from "./pages/Card/Card";
 import Payment from "./pages/Payment/Payment";
 import Confirmation from "./pages/Confirmation/Confirmation";
+import './App.scss';
 
 const router = createBrowserRouter([
   {

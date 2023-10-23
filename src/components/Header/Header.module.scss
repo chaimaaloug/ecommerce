@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: var(--clr-black);
+    border-bottom: 1px solid var(--clr-black);
+
+    .logo img {
+        max-width: 180px;
+        height: auto;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 45px;
+
+            a {
+                text-decoration: none;
+                color: var(--clr-black);
+                font-weight: 300;
+            }
+        }
+
+        .shoppingBag {
+            width: 48px;
+            padding-left: 25px;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                left: 12px;
+                top: -23Px;
+                bottom: -23px;
+                width: 1px;
+                margin-left: -3px;
+                background-color: var(--clr-black);
+            }
+        }
+    }
+}
+  

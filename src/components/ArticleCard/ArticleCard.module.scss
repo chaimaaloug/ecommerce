@@ -1,0 +1,32 @@
+.articleCardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px;
+    flex-wrap: wrap;
+    
+
+    .articleInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        
+        .image {
+            width: 77%;
+        }
+
+        .info {
+            width: 450px;
+
+            .title {
+                font-size: 32px;
+            }
+    
+            .description {
+                font-weight: 300;
+                line-height: 21.86px;
+                margin-top: 18px;
+            }
+        }
+    }
+}

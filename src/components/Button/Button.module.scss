@@ -1,0 +1,33 @@
+.button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+.whiteButton {
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    border: 1px solid var(--clr-black);
+    padding: 12px 21px 12px 21px;
+}
+
+.blackButton {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    padding: 26px;
+}
+
+.greenButton {
+    background-color: var(--clr-green);
+    color: var(--clr-black);
+    border: 1px solid var(--clr-black);
+}
+
+.sendButton {
+    background: transparent;
+    margin-top: 20px; 
+    font-size: 20px; 
+    color: var(--clr-white);
+    opacity: 0.8;
+}
