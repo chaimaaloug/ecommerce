@@ -2,14 +2,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    img {
-        width: 90%;
-    }
 
     .productInfoContainer {
         display: flex;
         justify-content: space-between;
-        margin-top: 14px;
+        margin-top: 25px;
+        width: 100%;
+        border-bottom: 1px solid var(--clr-black);
+
+        h3 {
+            margin-bottom: 22px;
+        }
     }
 }

@@ -1,5 +1,10 @@
 .productCardContainer {
     display: flex;
-    gap: 20px; 
+    gap: 42px;
+    
+    img {
+        height: 33vw;
+        width: 100%;
+    }
 }
   
