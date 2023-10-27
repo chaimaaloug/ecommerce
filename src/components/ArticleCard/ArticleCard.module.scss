@@ -1,27 +1,22 @@
 .articleCardContainer {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 100px 0px 0px;
+    justify-content: space-evenly;
+    padding-top: 95px;
     flex-wrap: wrap;
-    
 
     .articleInfo {
         display: flex;
         flex-direction: column;
         gap: 25px;
         
-        .image {
-            width: 77%;
-        }
-
         .info {
-            width: 450px;
+            max-width: 450px;
 
             .title {
                 font-size: 32px;
             }
-    
+            
             .description {
                 font-weight: 300;
                 line-height: 21.86px;
