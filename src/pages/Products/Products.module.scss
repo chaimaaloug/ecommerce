@@ -11,6 +11,11 @@
         height:297px;
         margin: 0 auto;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
     }    
+}
+
+.productsContainer {
+    padding: 16px 28px;
 }

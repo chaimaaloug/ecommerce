@@ -14,6 +14,10 @@ const Confirmation = () => {
                     <p>Notre équipe se mobilise pour l’envoyer un plus vite.</p>
                 </div>
                 <p>Numéro de commande : </p>
+             
+                <div>
+            </div>
+     
            </div>
             <Newsletter />
             <Address />

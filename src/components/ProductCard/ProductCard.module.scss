@@ -1,0 +1,15 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    img {
+        width: 90%;
+    }
+
+    .productInfoContainer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 14px;
+    }
+}

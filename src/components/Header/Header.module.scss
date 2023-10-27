@@ -14,11 +14,13 @@
 
     .navigation {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
 
         ul {
             list-style: none;
             display: flex;
+            flex-wrap: wrap;
             gap: 45px;
 
             a {

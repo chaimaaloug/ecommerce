@@ -1,0 +1,23 @@
+.collectionsContainer {
+  display: flex;
+
+  .imageContainer {
+    width: calc(100vw/3);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: 33vw;
+      width: 100%;
+    }
+
+    button {
+      position: absolute;
+      z-index: 1;
+      bottom: 24px;
+    }
+  }
+}
+  
