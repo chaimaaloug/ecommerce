@@ -9,7 +9,12 @@ function ProductCard({ product }) {
       <img src={img} alt={product.name} />
       <div className={style.productInfoContainer}>
         <h3>{product.name}</h3>
-        <p>{product.price} €</p>
+        <div className={style.priceContainer}>
+          <p>{product.price} €</p>
+          {product.hasDiscount &&
+            <p className={style.discountedPrice}>{product.priceAfterDiscount} €</p>
+          }
+        </div>
       </div>
     </div>
   );

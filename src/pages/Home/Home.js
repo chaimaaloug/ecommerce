@@ -17,7 +17,7 @@ const Home = () => {
             <Collections />
             <section className={style.productsSection}>
                 <Title
-                    text="Nos Best Sellers" 
+                    text="Nos Best-Sellers" 
                     className="centeredTitle"
                 />
                 <ProductList 

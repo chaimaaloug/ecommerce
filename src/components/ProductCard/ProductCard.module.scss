@@ -13,5 +13,16 @@
         h3 {
             margin-bottom: 22px;
         }
+
+        .priceContainer {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 18px;
+            .discountedPrice {
+                text-decoration: line-through;
+                font-size: 14px;
+            }
+        }
     }
 }
