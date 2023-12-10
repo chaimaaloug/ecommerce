@@ -25,10 +25,20 @@ const ShoppingCartModal = ({ isOpen, onClose, selectedProducts, onDeleteProduct 
     navigate('/products');
   };
 
+  const freeShippingThreshold = 50;
+  const deliveryCost = 4.5;
+  
   const isFreeShippingAvailable = Array.isArray(selectedProducts) && selectedProducts.length > 0
-    ? selectedProducts.some((product) => product.isAvailableForDelivery)
-    : false;
-    
+  ? selectedProducts.some((product) => product.isAvailableForDelivery)
+  : false;
+
+  const subtotal = selectedProducts
+  ? selectedProducts.reduce((acc, product) => acc + product.price * product.quantity, 0)
+  : 0;
+
+  const remainingForFreeShipping = freeShippingThreshold - subtotal;
+  const totalTTC = subtotal + deliveryCost + 7.12;
+
   return (
     <>
       {isOpen && (
@@ -63,7 +73,7 @@ const ShoppingCartModal = ({ isOpen, onClose, selectedProducts, onDeleteProduct 
               <div>
                 <div className={style.priceContainer}>
                   <p>Sous-total</p>
-                  <p></p>
+                  <p><strong>{subtotal} €</strong></p>
                 </div>
                 <div className={style.priceContainer}>
                   <p>Livraison</p>
@@ -76,7 +86,8 @@ const ShoppingCartModal = ({ isOpen, onClose, selectedProducts, onDeleteProduct 
                   (
                     <>
                       <div className={style.priceContainer}>
-                        <p>4,50 €</p>
+                       <p>{deliveryCost} €</p>
+                        
                       </div>
                     </>
                   )
@@ -85,12 +96,26 @@ const ShoppingCartModal = ({ isOpen, onClose, selectedProducts, onDeleteProduct 
                 </div>
                 <div className={style.priceContainer}>
                   <p><strong>Total TTC</strong></p>
-                  <p></p>
+                  <p><strong>{totalTTC.toFixed(2)} €</strong></p>
                 </div>
                 <div className={style.priceContainer}>
-                  <p>Taxes incluses</p>
-                  <p>7,12€</p>
+                  <p className={style.taxPrice}>Taxes incluses</p>
+                  <p className={style.taxPrice}>7,12 €</p>
                 </div>
+              </div>
+
+              <div>
+                {remainingForFreeShipping > 0 && (
+                  <div>
+                    <p className={style.shippingInfo}>Plus que {remainingForFreeShipping.toFixed(2)} € pour profiter de la livraison offerte</p>
+                    <div className={style.progressBar}>
+                      <div
+                        className={style.progressBarFill}
+                        style={{ width: `${(subtotal / freeShippingThreshold) * 100}%` }}
+                      />
+                    </div>
+                  </div>
+                )}
               </div>
 
               <div className={style.buttonsContainer}>

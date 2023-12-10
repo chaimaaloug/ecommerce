@@ -1,0 +1,92 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 22px;
+    border-bottom: 1px solid var(--clr-black);
+
+    .logo {
+        flex: 1;
+        text-align: center;
+
+        img {
+            width: 220px;
+        }    
+    }
+
+    .securePayment {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 6px;
+
+        .lockIcon {
+            font-size: 24px;
+        }
+    }  
+}
+
+.paymentFlex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 22px;
+    padding: 32px;
+
+    .paymentForm {
+        border: 1px solid var(--clr-black);
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+
+        input {
+            outline: none;
+            border: 1px solid  var(--clr-dark-grey);
+            padding: 15px;
+            margin-bottom: 16px;
+            margin-left: 20px;
+            width: 45%;
+        }
+
+        h3 {
+            font-weight: 700;
+            margin: 24px;
+        }
+
+        .buttonsColumnContainer {
+            display: flex;
+            gap: 11px;
+            padding: 15px;
+            margin-top: 15px; 
+        }
+    }
+
+    .ordeRecap {
+        flex: 1;
+
+        .orderDetails {
+            border: 1px solid var(--clr-black);
+            padding: 22px;
+            display: flex;
+            flex-direction: column;
+
+            .details {
+                margin-bottom: 12px;
+
+                p {
+                    font-weight: 100;
+                    font-size: 12px;
+                }
+            }
+        }
+        
+        .buttonsContainer {
+            display: flex;
+            flex-direction: column;
+            > *:first-of-type {
+                margin: 15px 0px;
+            }
+        }
+    }
+}

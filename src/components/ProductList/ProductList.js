@@ -6,8 +6,6 @@ import style from "./ProductList.module.scss";
 function ProductList({ selectedCategory }) {
   const categoryData = data.find(category => category.categoryName === selectedCategory);
 
-  console.log('selectedCategory', selectedCategory)
-
   return (
     <div className={style.productList}>
       <div className={style.productCardContainer}>

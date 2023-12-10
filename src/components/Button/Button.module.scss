@@ -26,6 +26,22 @@
 }
 
 
+.blackButtonColumn {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    padding: 26px;
+    width: 48%;
+}
+
+.orderButtonColumn {
+    border: 1px solid var(--clr-black);
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    padding: 26px;
+    width: 47%;
+}
+
+
 .greenButton {
     background-color: var(--clr-green);
     color: var(--clr-black);
