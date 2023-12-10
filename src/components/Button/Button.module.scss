@@ -18,10 +18,20 @@
     padding: 26px;
 }
 
+.orderButton {
+    border: 1px solid var(--clr-black);
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    padding: 26px;
+}
+
+
 .greenButton {
     background-color: var(--clr-green);
     color: var(--clr-black);
     border: 1px solid var(--clr-black);
+    padding: 22px;
+    width: 65%;
 }
 
 .sendButton {
@@ -31,3 +41,10 @@
     color: var(--clr-white);
     opacity: 0.8;
 }
+
+.tabButton {
+    background: none;
+    margin: 16px 15px 16px 0px;
+    font-weight: 100;
+}
+

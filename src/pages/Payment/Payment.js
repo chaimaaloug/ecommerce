@@ -1,7 +1,9 @@
 
 const Payment = () => {
     return (
-        <></>
+        <>
+                page paiement
+        </>
     );
 }
 

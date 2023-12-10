@@ -1,11 +1,32 @@
-import style from "./ProductCard.module.scss"
+import { useState } from "react";
+import Button from "../Button/Button";
+import style from "./ProductCard.module.scss";
+import { useNavigate } from 'react-router-dom';
 
-function ProductCard({ product }) {
+export function ProductCard({ product }) {
+  const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
+
   const imageSrc = `${product.images[0]}`;
   const img = require(`../../assets/images/${imageSrc}`);
 
+  const onClickCard = () => {
+    navigate(`/product/${product.slug}`);
+  };
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const handleQuickBuy = () => {
+  };
+
   return (
-    <div key={product.id} className={style.cardContainer}>
+    <div onClick={onClickCard} key={product.id} className={style.cardContainer} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <img src={img} alt={product.name} />
       <div className={style.productInfoContainer}>
         <h3>{product.name}</h3>
@@ -16,6 +37,11 @@ function ProductCard({ product }) {
           }
         </div>
       </div>
+      {isHovered && (
+        <div className={style.quickBuyButton} >
+          <Button label="Achat Rapide" onClick={handleQuickBuy} />
+        </div>
+      )}
     </div>
   );
 }

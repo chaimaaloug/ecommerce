@@ -1,0 +1,99 @@
+.modalContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+
+    .modalContent {
+        flex: 0 0 70%;
+        max-width: 520px;
+        background: var(--clr-white);
+        padding: 20px;
+        overflow: auto;
+        height: -webkit-fill-available;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .headerContainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 35px;
+        
+            h2 {
+                margin: 0 auto;
+                font-size: 30px;
+            }
+        
+            .closeIcon {
+                cursor: pointer;
+                font-size: 24px;
+            }
+        }
+        
+        .selectedProducts {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+        
+            .flexProducts {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 18px;
+        
+                img {
+                    width: 90px;
+                }
+            
+                .productName {
+                    text-decoration: underline;
+                    margin-bottom: 7px;
+                    font-weight: 100;
+                }
+        
+                .productPrice {
+                    font-weight: bold;
+                }
+            }
+        
+            .deleteIcon {
+                font-size: 32px;
+            }
+        }
+          
+        .priceContainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+
+            .freeShippingTag {
+                background-color: var(--clr-soft-pink);
+                color: var(--clr-black);
+                padding: 8px;
+            }
+            
+        }
+        
+     
+        .buttonsContainer {
+            display: flex;
+            flex-direction: column;
+            > *:first-of-type {
+                margin: 15px 0px;
+            }
+        }
+        
+    }
+}
+  
+

@@ -1,8 +1,8 @@
+import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Product from "./pages/Product/Product";
 import Products from "./pages/Products/Products";
-import Card from "./pages/Card/Card";
+import Product from "./pages/Product/Product";
 import Payment from "./pages/Payment/Payment";
 import Confirmation from "./pages/Confirmation/Confirmation";
 import './App.scss';
@@ -13,24 +13,20 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/product",
-    element: <Product />
+    path: "/product/:slug",
+    element: <Product />,
   },
   {
     path: "/products",
-    element: <Products />
-  },
-  {
-    path: "/card",
-    element: <Card />
+    element: <Products />,
   },
   {
     path: "/payment",
-    element: <Payment />
+    element: <Payment />,
   },
   {
     path: "/confirmation",
-    element: <Confirmation />
+    element: <Confirmation />,
   }
 ]);
 

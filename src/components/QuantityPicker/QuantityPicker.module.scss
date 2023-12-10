@@ -1,0 +1,19 @@
+.quantityPickerContainer {
+    border: 1px solid var(--clr-black);
+    background-color: var(--clr-white);
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+
+
+    .quantityPickerIcons {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+        border-left: 1px solid var(--clr-black);
+    }
+    
+}

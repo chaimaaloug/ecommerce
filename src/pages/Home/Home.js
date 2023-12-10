@@ -22,7 +22,7 @@ const Home = () => {
                 />
                 <ProductList 
                     selectedCategory="Best Sellers"
-                />   
+                />
             </section>
             <section className={style.productsSection}>
                 <Title

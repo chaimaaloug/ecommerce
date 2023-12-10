@@ -9,7 +9,23 @@
     0.65px -0.5px 0 var(--clr-black),
     -0.65px 0.5px 0 var(--clr-black),
     0.65px 0.5px 0 var(--clr-black);
-    padding: 42px 28px;
+    padding: 20px 0px 28px;
+}
+
+.rotatedTitle {
+  font-size: 60px;
+  color: var(--clr-white);
+  text-transform: uppercase;
+  font-weight: bold; 
+  letter-spacing: 3.7px;
+  text-shadow:
+    -0.65px -0.5px 0 var(--clr-black),
+    0.65px -0.5px 0 var(--clr-black),
+    -0.65px 0.5px 0 var(--clr-black),
+    0.65px 0.5px 0 var(--clr-black);
+  transform: rotate(-5deg);
+  transform-origin: center bottom;
+  padding: 32px;
 }
 
 .centeredTitle {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@100;200;300;400;500;600&display=swap');
 
 *,
 *::before,
@@ -8,6 +8,43 @@
     margin: 0;
 }
 
+/*=========== Fonts ============*/
+
+@font-face {
+    font-family: 'GraphikExtralight';
+    src:    local('GraphikExtralight'), 
+            local('GraphikExtralight'),
+            url('fonts/GraphikExtralight.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'GraphikRegular';
+    src:    local('GraphikRegular'), 
+            local('GraphikRegular'),
+            url('fonts/GraphikRegular.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'GraphikMedium';
+    src:    local('GraphikMedium'), 
+            local('GraphikMedium'),
+            url('fonts/GraphikMedium.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'GraphikBold';
+    src:    local('GraphikBold'), 
+            local('GraphikBold'),
+            url('fonts/GraphikBold.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'GraphikThin';
+    src:    local('GraphikThin'), 
+            local('GraphikThin'),
+            url('fonts/GraphikThin.otf') format('otf');
+}
+
 :root {
     --clr-white: #fff;
     --clr-black: #000;
@@ -15,9 +52,18 @@
     --clr-green: #70CCC7;
     --clr-soft-pink: #ECB7B7;
     --clr-pink: #F679A8;
+    --clr-red: #FF0000;
     --clr-blue: #7FD6E5;
     --clr-dark-grey: #D9D9D9;
     --clr-light-grey: #EEEEEE;
+    --clr-grey: #F2F2F2;
+
+    --font-extra-light: 'GraphikExtralight', sans-serif;
+    --font-regular: 'GraphikRegular', sans-serif;
+    --font-bold: 'GraphikBold', sans-serif;
+    --font-medium: 'GraphikMedium', sans-serif;
+    --font-thin: 'GraphikThin', sans-serif;
+
 }
 
 /*=========== Global Styling ============*/
@@ -33,4 +79,10 @@ ul {
 a {
     text-decoration: none;
     color: var(--clr-black);
+}
+
+button {
+    background: none;
+    outline: none;
+    border: none;
 }
