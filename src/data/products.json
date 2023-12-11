@@ -188,7 +188,188 @@
                   2,
                   4
               ]
-          }
+          },
+          {
+            "id": 4,
+            "name": "CARNET A5 - LAGON",
+            "slug": "carnet-a5-lagon",
+            "images": [
+                "img-25.png",
+                "img-26.png",
+                "img-27.png"
+            ],
+            "price": 18.50,
+            "hasDiscount": false,
+            "priceAfterDiscount": 4.5,
+            "description": "Ce beau carnet conçu avec le musée d’Orsay à Paris, s’inspire de l’œuvre “Nuit Étoilée”, un paysage lunaire qu’observait le peintre depuis sa chambre.\n\nLes talents créatifs du studio Papier Tigre ont réinterprété cette œuvre incontournable, dévoilant la douceur d'une nuit pour laisser court à la rêverie en un carnet tout aussi unique.\n\nCe carnet A5 Nuit Étoilée est fabriqué chez nous à Paris et contient :\n– une couverture souple\n– un index et calendrier non daté\n– toutes les pages numérotées\n– une grille pointillée\n- une reproduction de l'œuvre en dernière page\n\n💡 Retrouvez toute notre collection Orsay ici !\n\n💥 Une planche de stickers est offerte pour accessoiriser ce carnet",
+            "isAvailableOnline": true,
+            "isAvailableInStore": true,
+            "isAvailableForDelivery": true,
+            "details": [
+                {
+                    "title": "Marque",
+                    "description": "Papier Tigre"
+                },
+                {
+                    "title": "Dimensions",
+                    "description": "A5 (10.5 x 14.8 cm)"
+                },
+                {
+                    "title": "Pages",
+                    "description": "96"
+                },
+                {
+                    "title": "Couverture",
+                    "description": "Cartonnée souple"
+                },
+                {
+                    "title": "Papier",
+                    "description": "3 papiers recyclés différents"
+                },
+                {
+                    "title": "Matériaux",
+                    "description": "Papier et carton recyclés"
+                },
+                {
+                    "title": "Provenance",
+                    "description": "Fabriqué à Paris dans notre atelier"
+                },
+                {
+                    "title": "Disponibilité en boutique",
+                    "description": "Non"
+                },
+                {
+                    "title": "Livraison",
+                    "description": "Livraison gratuite en point relais à partir de 50€ en France Métropolitaine"
+                }
+            ],
+            "linkedProducts": [
+                1,
+                2,
+                4
+            ]
+        },
+        {
+            "id": 5,
+            "name": "CARNET DE RECETTES - MARINE",
+            "slug": "carnet-de-recettes-marine",
+            "images": [
+                "img-30.png",
+                "img-31.png",
+                "img-33.png",
+                "img-34.png"
+            ],
+            "price": 20.50,
+            "hasDiscount": false,
+            "priceAfterDiscount": 4.5,
+            "description": "Ce beau carnet conçu avec le musée d’Orsay à Paris, s’inspire de l’œuvre “Nuit Étoilée”, un paysage lunaire qu’observait le peintre depuis sa chambre.\n\nLes talents créatifs du studio Papier Tigre ont réinterprété cette œuvre incontournable, dévoilant la douceur d'une nuit pour laisser court à la rêverie en un carnet tout aussi unique.\n\nCe carnet A5 Nuit Étoilée est fabriqué chez nous à Paris et contient :\n– une couverture souple\n– un index et calendrier non daté\n– toutes les pages numérotées\n– une grille pointillée\n- une reproduction de l'œuvre en dernière page\n\n💡 Retrouvez toute notre collection Orsay ici !\n\n💥 Une planche de stickers est offerte pour accessoiriser ce carnet",
+            "isAvailableOnline": true,
+            "isAvailableInStore": true,
+            "isAvailableForDelivery": true,
+            "details": [
+                {
+                    "title": "Marque",
+                    "description": "Papier Tigre"
+                },
+                {
+                    "title": "Dimensions",
+                    "description": "A5 (10.5 x 14.8 cm)"
+                },
+                {
+                    "title": "Pages",
+                    "description": "96"
+                },
+                {
+                    "title": "Couverture",
+                    "description": "Cartonnée souple"
+                },
+                {
+                    "title": "Papier",
+                    "description": "3 papiers recyclés différents"
+                },
+                {
+                    "title": "Matériaux",
+                    "description": "Papier et carton recyclés"
+                },
+                {
+                    "title": "Provenance",
+                    "description": "Fabriqué à Paris dans notre atelier"
+                },
+                {
+                    "title": "Disponibilité en boutique",
+                    "description": "Non"
+                },
+                {
+                    "title": "Livraison",
+                    "description": "Livraison gratuite en point relais à partir de 50€ en France Métropolitaine"
+                }
+            ],
+            "linkedProducts": [
+                1,
+                2,
+                4
+            ]
+        },
+        {
+            "id": 6,
+            "name": "CARNET A5 - BAL DU MOULIN",
+            "slug": "carnet-a5-bal-du-moulin",
+            "images": [
+                "img-37.png",
+                "img-38.png",
+                "img-39.png"
+            ],
+            "price": 12.50,
+            "hasDiscount": false,
+            "priceAfterDiscount": 4.5,
+            "description": "Ce beau carnet conçu avec le musée d’Orsay à Paris, s’inspire de l’œuvre “Nuit Étoilée”, un paysage lunaire qu’observait le peintre depuis sa chambre.\n\nLes talents créatifs du studio Papier Tigre ont réinterprété cette œuvre incontournable, dévoilant la douceur d'une nuit pour laisser court à la rêverie en un carnet tout aussi unique.\n\nCe carnet A5 Nuit Étoilée est fabriqué chez nous à Paris et contient :\n– une couverture souple\n– un index et calendrier non daté\n– toutes les pages numérotées\n– une grille pointillée\n- une reproduction de l'œuvre en dernière page\n\n💡 Retrouvez toute notre collection Orsay ici !\n\n💥 Une planche de stickers est offerte pour accessoiriser ce carnet",
+            "isAvailableOnline": true,
+            "isAvailableInStore": true,
+            "isAvailableForDelivery": true,
+            "details": [
+                {
+                    "title": "Marque",
+                    "description": "Papier Tigre"
+                },
+                {
+                    "title": "Dimensions",
+                    "description": "A5 (10.5 x 14.8 cm)"
+                },
+                {
+                    "title": "Pages",
+                    "description": "96"
+                },
+                {
+                    "title": "Couverture",
+                    "description": "Cartonnée souple"
+                },
+                {
+                    "title": "Papier",
+                    "description": "3 papiers recyclés différents"
+                },
+                {
+                    "title": "Matériaux",
+                    "description": "Papier et carton recyclés"
+                },
+                {
+                    "title": "Provenance",
+                    "description": "Fabriqué à Paris dans notre atelier"
+                },
+                {
+                    "title": "Disponibilité en boutique",
+                    "description": "Non"
+                },
+                {
+                    "title": "Livraison",
+                    "description": "Livraison gratuite en point relais à partir de 50€ en France Métropolitaine"
+                }
+            ],
+            "linkedProducts": [
+                1,
+                2,
+                4
+            ]
+        }
       ]
   },
   {
@@ -530,6 +711,8 @@
               ],
               "price": 24,
               "hasDiscount": true,
+              "isPack": true,
+              "packPrice": -4.55,
               "priceAfterDiscount": 20,
               "description": "Ce beau carnet conçu avec le musée d’Orsay à Paris, s’inspire de l’œuvre “Nuit Étoilée”, un paysage lunaire qu’observait le peintre depuis sa chambre. \n \n Les talents créatifs du studio Papier Tigre ont réinterprété cette œuvre incontournable, dévoilant la douceur d'une nuit pour laisser court à la rêverie en un carnet tout aussi unique. \n \n Ce carnet A5 Nuit Étoilée est fabriqué chez nous à Paris et contient : \n – une couverture souple \n – un index et calendrier non daté \n – toutes les pages numérotées \n – une grille \n pointillée \n - une reproduction de l'œuvre en dernière page \n \n 💡 \n Retrouvez toute notre collection Orsay ici ! \n \n 💥 \n Une planche de stickers est offerte pour accessoiriser ce carnet",
               "isAvailableOnline": true,
@@ -587,7 +770,9 @@
                   "img-10.jpg"
               ],
               "price": 37.5,
-              "hasDiscount": false,
+              "hasDiscount": true,
+              "isPack": true,
+              "packPrice": -5.52,
               "priceAfterDiscount": 32,
               "description": "Ce beau carnet conçu avec le musée d’Orsay à Paris, s’inspire de l’œuvre “Nuit Étoilée”, un paysage lunaire qu’observait le peintre depuis sa chambre. \n \n Les talents créatifs du studio Papier Tigre ont réinterprété cette œuvre incontournable, dévoilant la douceur d'une nuit pour laisser court à la rêverie en un carnet tout aussi unique. \n \n Ce carnet A5 Nuit Étoilée est fabriqué chez nous à Paris et contient : \n – une couverture souple \n – un index et calendrier non daté \n – toutes les pages numérotées \n – une grille \n pointillée \n - une reproduction de l'œuvre en dernière page \n \n 💡 \n Retrouvez toute notre collection Orsay ici ! \n \n 💥 \n Une planche de stickers est offerte pour accessoiriser ce carnet",
               "isAvailableOnline": true,
@@ -647,6 +832,8 @@
               "price": 8.5,
               "hasDiscount": true,
               "priceAfterDiscount": 4.5,
+              "isPack": true,
+              "packPrice": -5.55,
               "description": "Ce beau carnet conçu avec le musée d’Orsay à Paris, s’inspire de l’œuvre “Nuit Étoilée”, un paysage lunaire qu’observait le peintre depuis sa chambre. \n \n Les talents créatifs du studio Papier Tigre ont réinterprété cette œuvre incontournable, dévoilant la douceur d'une nuit pour laisser court à la rêverie en un carnet tout aussi unique. \n \n Ce carnet A5 Nuit Étoilée est fabriqué chez nous à Paris et contient : \n – une couverture souple \n – un index et calendrier non daté \n – toutes les pages numérotées \n – une grille \n pointillée \n - une reproduction de l'œuvre en dernière page \n \n 💡 \n Retrouvez toute notre collection Orsay ici ! \n \n 💥 \n Une planche de stickers est offerte pour accessoiriser ce carnet",
               "isAvailableOnline": true,
               "isAvailableInStore": true,

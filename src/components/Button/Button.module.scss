@@ -41,19 +41,26 @@
     width: 47%;
 }
 
-
 .greenButton {
     background-color: var(--clr-green);
     color: var(--clr-black);
     border: 1px solid var(--clr-black);
     padding: 22px;
     width: 65%;
+    font-weight: 100;
+
+    &:hover {
+        background-color: var(--clr-dark1-grey);
+        color: var(--clr-white);
+        transition: all 3s ease-in-out;
+    }
 }
+
 
 .sendButton {
     background: transparent;
-    margin-top: 20px; 
-    font-size: 20px; 
+    margin-top: 20px;
+    font-size: 20px;
     color: var(--clr-white);
     opacity: 0.8;
 }
@@ -63,4 +70,3 @@
     margin: 16px 15px 16px 0px;
     font-weight: 100;
 }
-

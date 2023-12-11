@@ -1,10 +1,13 @@
 .productCardContainer {
-    display: flex;
-    gap: 42px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 38px;
     
     img {
         height: 33vw;
         width: 100%;
     }
 }
+    
+  
   

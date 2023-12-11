@@ -5,10 +5,8 @@ import Reinsurance from "../../components/Reinsurance/Reinsurance";
 import Title from "../../components/Title/Title";
 import style from "./Products.module.scss"
 import ProductList from "../../components/ProductList/ProductList"
-import { useParams } from 'react-router-dom';
 
 const Products = () => {
-
 
   return (
       <div>

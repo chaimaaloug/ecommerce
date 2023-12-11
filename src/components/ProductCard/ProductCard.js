@@ -28,6 +28,14 @@ export function ProductCard({ product }) {
   return (
     <div onClick={onClickCard} key={product.id} className={style.cardContainer} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <img src={img} alt={product.name} />
+      <div>
+        {product.isPack &&
+          <div className={style.packFlex}>
+            <p className={style.pack}>{product.packPrice} €</p>
+            <p className={style.pack}>PACK</p>
+          </div>
+        }
+      </div>
       <div className={style.productInfoContainer}>
         <h3>{product.name}</h3>
         <div className={style.priceContainer}>
