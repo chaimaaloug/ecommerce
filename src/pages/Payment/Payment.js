@@ -4,18 +4,29 @@ import style from './Payment.module.scss';
 import { IoMdLock } from "react-icons/io";
 import Button from "../../components/Button/Button";
 import { useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+
 
 const Payment = () => {
 
     const navigate = useNavigate();
+    const location = useLocation();
 
     const handleCheckout = () => {
-        navigate('/confirmation');
+        navigate('/confirmation', { state: { selectedProducts } });
     };
     
     const handleContinueShopping = () => {
         navigate('/products');
     };
+
+    const selectedProducts = location.state && location.state.selectedProducts;
+    const subtotal = selectedProducts
+      ? selectedProducts.reduce((acc, product) => acc + product.price * product.quantity, 0)
+      : 0;
+  
+    const deliveryCost = 4.5;
+    const totalTTC = subtotal + deliveryCost + 7.12;
 
     return (
         <>
@@ -61,19 +72,32 @@ const Payment = () => {
 
                 <div className={style.ordeRecap}>
                     <div className={style.orderDetails}>
+                        {selectedProducts.map((product) => (
+                            <div key={product.id} >
+                                <div className={style.productDetails}>
+                                    <div className={style.productDetailsFlex}>
+                                        <img src={require(`../../assets/images/${product.imageSrc}`)} alt={product.name} />
+                                        <p className={style.name}>{product.name}</p>
+                                    </div>
+                                    <p className={style.price}>{product.price.toFixed(2)} €</p>
+                                </div>
+                            </div>
+                        ))}
                         <div className={style.details}>
                             <p>SOUS-TOTAL</p>
-                            <p><strong></strong></p>
+                            <p><strong>{subtotal.toFixed(2)} €</strong></p>
                         </div>
                         <div className={style.details}>
                             <p>LIVRAISON</p>
+                            <p>{deliveryCost} €</p>
                         </div>
                         <div className={style.details}>
                             <p><strong>TOTAL TTC</strong></p>
-                            <p><strong></strong></p>
+                            <p><strong>{totalTTC.toFixed(2)} €</strong></p>
                         </div>
                         <div className={style.details}>
                             <p>TAXES INCLUSES</p>
+                            <p>7,12 €</p>
                         </div>
                        
                     </div>

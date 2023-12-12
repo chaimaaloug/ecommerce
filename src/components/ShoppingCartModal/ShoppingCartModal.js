@@ -18,7 +18,7 @@ const ShoppingCartModal = ({ isOpen, onClose, selectedProducts, onDeleteProduct 
   };
 
   const handleCheckout = () => {
-    navigate('/payment');
+    navigate('/payment', { state: { selectedProducts } });
   };
 
   const handleContinueShopping = () => {

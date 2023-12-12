@@ -71,7 +71,36 @@
             display: flex;
             flex-direction: column;
 
+            .productDetails {  
+                display: flex;
+                align-items: center;
+                justify-content: space-between; 
+                margin-bottom: 38px;
+
+                .productDetailsFlex {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+
+                    img {
+                        width: 100px;
+                    }
+    
+                    .price {
+                        font-weight: 900;
+                    }
+
+                    .name {
+                        font-weight: 400;
+                        text-decoration: underline;
+                    }
+                }                
+            }
+
             .details {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
                 margin-bottom: 12px;
 
                 p {
