@@ -5,7 +5,7 @@ import Newsletter from "../../components/NewsLetter/Newsletter";
 import Reinsurance from "../../components/Reinsurance/Reinsurance";
 import Title from "../../components/Title/Title";
 import ArrowButton from "../../components/ArrowButton/ArrowButton";
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import products from '../../data/products.json';
 import ProductCard from "../../components/ProductCard/ProductCard";
 import "slick-carousel/slick/slick.css"; 
@@ -16,6 +16,7 @@ import Button from "../../components/Button/Button";
 import QuantitySelector from "../../components/QuantityPicker/QuantityPicker"
 import {useState } from "react";
 import ShoppingCartModal from "../../components/ShoppingCartModal/ShoppingCartModal";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const parseDescription = (description) => {
     return description.split('\n').map((line, index) => (
@@ -106,6 +107,15 @@ const Product = () => {
   return (
     <>
       <Header cartQuantity={cartQuantity} selectedProducts={selectedProducts} onDeleteProduct={handleDeleteProduct}/>
+        <div className={style.filAriane}>
+          <Link to="/">Accueil</Link> 
+          <MdKeyboardArrowRight />
+          <Link to="/products">Produits</Link> 
+          <MdKeyboardArrowRight />
+          <p>Carnet</p>
+          <MdKeyboardArrowRight />
+          <p>{product.name}</p>
+        </div>
       <Slider {...sliderSettings}>
         {product.images.map((image, index) => (
           <div key={index} className={style.sliderImg}>

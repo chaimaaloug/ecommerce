@@ -7,6 +7,8 @@ import Reinsurance from '../../components/Reinsurance/Reinsurance';
 import ProductCard from '../../components/ProductCard/ProductCard';
 import Title from '../../components/Title/Title';
 import style from './Wishlist.module.scss';
+import { MdKeyboardArrowRight } from "react-icons/md";
+
 
 const Wishlist = () => {
     const [wishlist, setWishlist] = useState([]);
@@ -35,6 +37,11 @@ const Wishlist = () => {
     <div>
       <Header />
       <section className={style.wishlistContainer}>
+        <div className={style.filAriane}>
+          <Link to="/">Accueil</Link> 
+          <MdKeyboardArrowRight />
+          <p>Wishlist</p>
+        </div>
         <Title text="Wishlist ♥️" className="outlinedTitle" />
         {wishlist.length === 0 ? (
           <div className={style.favoriteMessage}>

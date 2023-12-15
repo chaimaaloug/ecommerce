@@ -23,9 +23,10 @@
     0.65px -0.5px 0 var(--clr-black),
     -0.65px 0.5px 0 var(--clr-black),
     0.65px 0.5px 0 var(--clr-black);
-  transform: skew(0, -7deg);
+  transform: rotate(-4.3deg);
   transform-origin: center bottom;
   padding: 32px;
+  margin-bottom: 12px;
 }
 
 .centeredTitle {

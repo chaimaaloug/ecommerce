@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ProductCard from '../ProductCard/ProductCard';
 import data from '../../data/products.json';
 import style from './ProductList.module.scss';
-import { Button } from 'semantic-ui-react';
+import Button from '../Button/Button';
 
-function ProductList({ selectedCategory }) {
+function ProductList({ selectedCategory, updateTotalProducts }) {
   const categoryData = data.find((category) => category.categoryName === selectedCategory);
   const [wishlist, setWishlist] = useState([]);
-  const [displayedProducts, setDisplayedProducts] = useState(5); // Initial number of displayed products
+  const [displayedProducts, setDisplayedProducts] = useState(5);
 
   const onFavoriteToggle = (newIsFavorite, product) => {
     const updatedWishlist = [...wishlist];
@@ -24,8 +24,12 @@ function ProductList({ selectedCategory }) {
     setWishlist(updatedWishlist);
   };
 
+  useEffect(() => {
+    updateTotalProducts(categoryData.products.length);
+  }, [categoryData.products.length, updateTotalProducts]);
+
   const handleShowAllClick = () => {
-    setDisplayedProducts(categoryData.products.length); // Show all products
+    setDisplayedProducts(categoryData.products.length);
   };
 
   return (
@@ -38,10 +42,14 @@ function ProductList({ selectedCategory }) {
             onFavoriteToggle={onFavoriteToggle}
           />
         ))}
-      </div>
-      {displayedProducts < categoryData.products.length && (
-        <Button label="Tout Voir" className="viewAll" onClick={handleShowAllClick} />
+        {displayedProducts < categoryData.products.length && (
+        <div className={style.centerButton}>
+          <div className={style.buttonWrapper}>
+            <Button label="Tout Voir" className="viewAllButton" onClick={handleShowAllClick} />
+          </div>
+        </div>
       )}
+      </div>
     </div>
   );
 }
