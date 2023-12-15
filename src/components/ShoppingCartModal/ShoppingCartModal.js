@@ -77,22 +77,15 @@ const ShoppingCartModal = ({ isOpen, onClose, selectedProducts, onDeleteProduct 
                 </div>
                 <div className={style.priceContainer}>
                   <p>Livraison</p>
-                  {isFreeShippingAvailable ? (
+                  {remainingForFreeShipping > 0 ? (
+                    <div className={style.priceContainer}>
+                      <p>{deliveryCost.toFixed(2)} €</p>
+                    </div>
+                  ) : (
                     <div className={style.freeShippingTag}>
                       <p>Free shipping</p>
                     </div>
-                  )
-                  :
-                  (
-                    <>
-                      <div className={style.priceContainer}>
-                       <p>{deliveryCost} €</p>
-                        
-                      </div>
-                    </>
-                  )
-                }
-                 
+                  )}
                 </div>
                 <div className={style.priceContainer}>
                   <p><strong>Total TTC</strong></p>

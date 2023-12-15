@@ -194,9 +194,9 @@
             "name": "CARNET A5 - LAGON",
             "slug": "carnet-a5-lagon",
             "images": [
-                "img-25.png",
-                "img-26.png",
-                "img-27.png"
+                "img-2.jpg",
+                "img-1.jpg",
+                "img-3.jpg"
             ],
             "price": 18.50,
             "hasDiscount": false,
@@ -254,10 +254,8 @@
             "name": "CARNET DE RECETTES - MARINE",
             "slug": "carnet-de-recettes-marine",
             "images": [
-                "img-30.png",
-                "img-31.png",
-                "img-33.png",
-                "img-34.png"
+                "img-3.jpg",
+                "img-6.jpg"
             ],
             "price": 20.50,
             "hasDiscount": false,
@@ -315,9 +313,8 @@
             "name": "CARNET A5 - BAL DU MOULIN",
             "slug": "carnet-a5-bal-du-moulin",
             "images": [
-                "img-37.png",
-                "img-38.png",
-                "img-39.png"
+                "img-1.jpg",
+                "img-2.jpg"
             ],
             "price": 12.50,
             "hasDiscount": false,
