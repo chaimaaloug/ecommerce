@@ -33,6 +33,8 @@ const Product = () => {
   const [cartQuantity, setCartQuantity] = useState(0);
   const [deletedProductId, setDeletedProductId] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [isFavorite, setIsFavorite] = useState(false);
+  const [wishlist, setWishlist] = useState([]);
 
   const product = products.reduce((acc, category) => {
     const foundProduct = category.products.find((p) => p.slug === slug);
@@ -40,6 +42,16 @@ const Product = () => {
   }, null);
 
   const category = product ? products.find((category) => category.products.some((p) => p.slug === slug)) : null;
+
+  const onFavoriteToggle = (newIsFavorite, product) => {
+    setWishlist((prevWishlist) => {
+      if (prevWishlist.some((p) => p.id === product.id)) {
+        return prevWishlist.filter((p) => p.id !== product.id);
+      } else {
+        return [...prevWishlist, product];
+      }
+    });
+  };
 
   const sliderSettings = {
     dots: false,
@@ -89,6 +101,10 @@ const Product = () => {
     setSelectedProducts((prevSelectedProducts) =>
       prevSelectedProducts.filter((product) => product.id !== productId)
     );
+  };
+
+  const handleFavoriteClick = (newIsFavorite, product) => {
+    setIsFavorite(newIsFavorite);
   };
 
   return (
@@ -181,7 +197,7 @@ const Product = () => {
             return acc || category.products.find((p) => p.id === linkedProductId);
           }, null);
           if (linkedProduct) {
-            return <ProductCard key={linkedProduct.id} product={linkedProduct} />;
+            return <ProductCard key={linkedProduct.id} product={linkedProduct} onFavoriteToggle={onFavoriteToggle} />;
           }
           return null;
         })}

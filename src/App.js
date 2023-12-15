@@ -5,6 +5,7 @@ import Products from "./pages/Products/Products";
 import Product from "./pages/Product/Product";
 import Payment from "./pages/Payment/Payment";
 import Confirmation from "./pages/Confirmation/Confirmation";
+import Wishlist from "./pages/Wishlist/Wishlist";
 import './App.scss';
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/products",
     element: <Products />,
+  },
+  {
+    path: "/wishlist",
+    element: <Wishlist />,
   },
   {
     path: "/payment",

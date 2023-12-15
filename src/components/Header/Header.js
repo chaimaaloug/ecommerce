@@ -35,6 +35,9 @@ const Header = ({ cartQuantity, selectedProducts, onDeleteProduct }) => {
             <li>
               <Link to="/products">Écriture & Papeterie</Link>
             </li>
+            <li>
+              <Link to="/wishlist" className={style.wishlist}>Wishlist ♥️</Link>   
+            </li>
           </ul>
           <div className={style.shoppingBag} onClick={openModal}>
             <img src={cart} alt="" />
