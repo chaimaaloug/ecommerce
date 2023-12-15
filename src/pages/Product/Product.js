@@ -103,10 +103,6 @@ const Product = () => {
     );
   };
 
-  const handleFavoriteClick = (newIsFavorite, product) => {
-    setIsFavorite(newIsFavorite);
-  };
-
   return (
     <>
       <Header cartQuantity={cartQuantity} selectedProducts={selectedProducts} onDeleteProduct={handleDeleteProduct}/>
@@ -143,7 +139,6 @@ const Product = () => {
             </div>
           </div>
         </div>
-
         <div>
           <p>Combien ?</p>
           <div className={style.quantityContainer}>
@@ -151,7 +146,6 @@ const Product = () => {
             <Button label="Ajouter au panier" className="greenButton" onClick={handleAddToCart} />
           </div>
         </div>
-
         <div className={style.tabsName}>
           <Button
             label="Description"
@@ -168,7 +162,6 @@ const Product = () => {
             onClick={() => handleTabChange('details')}
           />
         </div>
-
         <div>
           {selectedTab === 'description' && (
             <p className={style.productDescription}>
@@ -189,7 +182,6 @@ const Product = () => {
           )}
         </div>
       </div>
-
       <Title text="ET AVEC CECI ?" className="rotatedTitle" />
       <div className={style.linkedProductsContainer}>
         {product.linkedProducts.map((linkedProductId) => {
@@ -202,9 +194,7 @@ const Product = () => {
           return null;
         })}
       </div>
-      <Button onClick={handleShoppingBagClick}>
-        Shopping Cart
-      </Button>
+      <Button onClick={handleShoppingBagClick}></Button>
       <Reinsurance />
       <Newsletter />
       <Address />

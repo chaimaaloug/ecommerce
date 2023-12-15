@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import ProductCard from '../ProductCard/ProductCard';
 import data from '../../data/products.json';
 import style from './ProductList.module.scss';
+import { Button } from 'semantic-ui-react';
 
 function ProductList({ selectedCategory }) {
   const categoryData = data.find((category) => category.categoryName === selectedCategory);
   const [wishlist, setWishlist] = useState([]);
+  const [displayedProducts, setDisplayedProducts] = useState(5); // Initial number of displayed products
 
   const onFavoriteToggle = (newIsFavorite, product) => {
     const updatedWishlist = [...wishlist];
@@ -22,10 +24,14 @@ function ProductList({ selectedCategory }) {
     setWishlist(updatedWishlist);
   };
 
+  const handleShowAllClick = () => {
+    setDisplayedProducts(categoryData.products.length); // Show all products
+  };
+
   return (
     <div className={style.productList}>
       <div className={style.productCardContainer}>
-        {categoryData.products.map((product) => (
+        {categoryData.products.slice(0, displayedProducts).map((product) => (
           <ProductCard
             key={product.id}
             product={product}
@@ -33,6 +39,9 @@ function ProductList({ selectedCategory }) {
           />
         ))}
       </div>
+      {displayedProducts < categoryData.products.length && (
+        <Button label="Tout Voir" className="viewAll" onClick={handleShowAllClick} />
+      )}
     </div>
   );
 }

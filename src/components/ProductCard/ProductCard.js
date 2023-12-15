@@ -5,7 +5,7 @@ import { GoHeart } from 'react-icons/go';
 import Button from '../Button/Button';
 import style from './ProductCard.module.scss';
 
-const ProductCard = ({ product, onFavoriteToggle }) => {
+const ProductCard = ({ product }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isFavorite, setIsFavorite] = useState(false);
 
