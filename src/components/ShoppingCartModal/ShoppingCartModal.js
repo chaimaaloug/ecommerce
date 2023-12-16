@@ -28,10 +28,6 @@ const ShoppingCartModal = ({ isOpen, onClose, selectedProducts, onDeleteProduct 
   const freeShippingThreshold = 50;
   const deliveryCost = 4.5;
   
-  const isFreeShippingAvailable = Array.isArray(selectedProducts) && selectedProducts.length > 0
-  ? selectedProducts.some((product) => product.isAvailableForDelivery)
-  : false;
-
   const subtotal = selectedProducts
   ? selectedProducts.reduce((acc, product) => acc + product.price * product.quantity, 0)
   : 0;
@@ -52,7 +48,7 @@ const ShoppingCartModal = ({ isOpen, onClose, selectedProducts, onDeleteProduct 
                 </div>
               </div>
               <ul>
-                {selectedProducts.map((product) => (
+                {selectedProducts && selectedProducts.map((product) => (
                   <div key={product.id} className={style.productImg}>
                     <div className={style.selectedProducts}>
                       <div className={style.flexProducts}>

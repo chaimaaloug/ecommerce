@@ -34,7 +34,6 @@ const Product = () => {
   const [cartQuantity, setCartQuantity] = useState(0);
   const [deletedProductId, setDeletedProductId] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
-  const [isFavorite, setIsFavorite] = useState(false);
   const [wishlist, setWishlist] = useState([]);
 
   const product = products.reduce((acc, category) => {

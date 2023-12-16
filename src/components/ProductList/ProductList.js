@@ -25,7 +25,10 @@ function ProductList({ selectedCategory, updateTotalProducts }) {
   };
 
   useEffect(() => {
-    updateTotalProducts(categoryData.products.length);
+    // Check if updateTotalProducts is a function before calling it
+    if (typeof updateTotalProducts === 'function') {
+      updateTotalProducts(categoryData.products.length);
+    }
   }, [categoryData.products.length, updateTotalProducts]);
 
   const handleShowAllClick = () => {
